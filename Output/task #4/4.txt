@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f1">
+  <meta name="description" content="A practical agriculture and food innovation guide for Filipino farmers, with planting tips, field tasks, and crop care reminders.">
+  <title>Anihan — Agriculture &amp; Food Innovation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Anihan home">
+      <span class="brand-icon" aria-hidden="true">✳</span>
+      <span><strong>anihan</strong><small>AGRICULTURE &amp; FOOD INNOVATION</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#farm-watch">Farm watch</a>
+      <a href="#innovation">Farm innovation</a>
+      <a href="#planting">Planting guide</a>
+      <a href="#farm-tasks">Farm checklist</a>
+      <a href="#reminders">Crop reminders</a>
+    </nav>
+    <a class="header-action" href="#planting"><span aria-hidden="true">✳</span> Plan your season</a>
+  </header>
+
+  <aside class="demo-notice" aria-label="Demo and data privacy notice">
+    <span class="demo-notice-icon" aria-hidden="true">!</span>
+    <p><strong>Demo website:</strong> For demonstration only. Do not enter real, private, or confidential farm data.</p>
+  </aside>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Local knowledge. Better harvests. Shared progress.</p>
+        <h1 id="hero-title">Good ideas grow<br>right <span>here at home.</span></h1>
+        <p class="hero-description">Practical crop guidance and small, smart farm ideas for the people growing food across the Philippines.</p>
+        <a class="button button-light" href="#planting">Explore the planting guide <span aria-hidden="true">→</span></a>
+        <p class="hero-note"><span aria-hidden="true">⌖</span> Made for Filipino farmers and food growers</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun-disc"></div>
+        <div class="hero-hill hill-back"></div>
+        <div class="hero-hill hill-front"></div>
+        <div class="house">
+          <div class="roof"></div><div class="house-body"><div class="window"></div><div class="door"></div></div>
+        </div>
+        <div class="field-lines"><i></i><i></i><i></i><i></i></div>
+        <span class="art-leaf leaf-one">✿</span><span class="art-leaf leaf-two">✿</span>
+        <span class="art-label">Anihan, sama-sama.</span>
+      </div>
+      <div class="hero-bottom"><span>GROW LOCAL · SHARE WHAT WORKS</span><span>Scroll to explore ↓</span></div>
+    </section>
+
+    <section class="intro section-wrap" aria-label="About Anihan">
+      <div><p class="eyebrow eyebrow-dark">Ideas for a more resilient food system</p><h2>Growing local.<br>Building <em>better.</em></h2></div>
+      <p class="intro-copy">Good agriculture blends farmers' experience with useful new ideas. Explore locally adaptable planting tips, keep track of fieldwork, and find simple ways to care for crops and reduce waste after harvest. Share what works with your farming community.</p>
+    </section>
+
+    <section class="section-wrap farm-watch-section" id="farm-watch" aria-labelledby="farm-watch-title">
+      <div class="section-heading">
+        <div><p class="eyebrow eyebrow-dark">01 · Sample farm activity board</p><h2 id="farm-watch-title">A closer look at the fields.</h2></div>
+        <p>See which demo farms have work due, and spot crop or storage concerns that may need a follow-up.</p>
+      </div>
+      <div class="watch-summary" aria-label="Farm activity summary">
+        <div><span class="summary-icon summary-overdue" aria-hidden="true">!</span><span><strong id="overdue-count">0</strong><small>overdue activities</small></span></div>
+        <div><span class="summary-icon summary-due" aria-hidden="true">◷</span><span><strong id="due-count">0</strong><small>due today</small></span></div>
+        <div><span class="summary-icon summary-watch" aria-hidden="true">⌖</span><span><strong id="concern-count">0</strong><small>farm concerns to watch</small></span></div>
+      </div>
+      <div class="farm-watch-grid" id="farm-watch-list" aria-live="polite"></div>
+      <p class="watch-disclaimer"><span aria-hidden="true">ⓘ</span> Demonstration records with example dates and conditions only. They are not reports from real farms or live monitoring.</p>
+    </section>
+
+    <section class="section-wrap preparedness-section" id="innovation" aria-labelledby="preparedness-title">
+      <div class="section-heading">
+        <div><p class="eyebrow eyebrow-dark">02 · Smart farm planning</p><h2 id="preparedness-title">A stronger farm starts here.</h2></div>
+        <p>Build on local knowledge with practical steps for healthier soil, thoughtful planting, and a more useful harvest.</p>
+      </div>
+      <div class="prepared-grid">
+        <article class="prepared-card go-bag-card">
+          <div class="card-topline"><span class="round-icon" aria-hidden="true">▣</span><span class="card-kicker">A SEASON-START CHECKLIST</span></div>
+          <h3>Try one improvement this season</h3>
+          <p>Small experiments can help make farm work more productive and sustainable. Start with what fits your land and resources.</p>
+          <ul class="checklist household-list" id="planning-checklist" aria-label="Farm planning checklist">
+            <li><label><input type="checkbox" data-checklist="planning" data-item="market"><span class="custom-check" aria-hidden="true"></span><span>Choose a crop that suits local needs and market demand</span></label></li>
+            <li><label><input type="checkbox" data-checklist="planning" data-item="soil"><span class="custom-check" aria-hidden="true"></span><span>Check soil condition and add suitable organic matter</span></label></li>
+            <li><label><input type="checkbox" data-checklist="planning" data-item="seed"><span class="custom-check" aria-hidden="true"></span><span>Source quality seeds or planting material for your area</span></label></li>
+            <li><label><input type="checkbox" data-checklist="planning" data-item="water"><span class="custom-check" aria-hidden="true"></span><span>Plan water use and field drainage before planting</span></label></li>
+            <li><label><input type="checkbox" data-checklist="planning" data-item="records"><span class="custom-check" aria-hidden="true"></span><span>Record planting dates, costs, and harvest results</span></label></li>
+            <li><label><input type="checkbox" data-checklist="planning" data-item="postharvest"><span class="custom-check" aria-hidden="true"></span><span>Prepare a clean, shaded place for harvested produce</span></label></li>
+          </ul>
+          <div class="checklist-footer"><span id="planning-progress" aria-live="polite">0 of 6 ready</span><button class="text-button" type="button" data-reset="planning">Reset checklist</button></div>
+        </article>
+        <aside class="prepared-aside">
+          <article class="aside-note">
+            <span class="round-icon round-icon-sun" aria-hidden="true">☼</span>
+            <p class="card-kicker">FARMER-LED INNOVATION</p>
+            <h3>Learn, test, and share.</h3>
+            <p>Try a manageable change on a small plot first. Compare results with your usual practice, keep notes, and share useful lessons with other farmers.</p>
+          </article>
+          <article class="emergency-note">
+            <span aria-hidden="true">◎</span>
+            <div><strong>Explore local support</strong><p>Connect with your farmers' group, cooperative, or municipal agriculture office for locally relevant advice, training, and services.</p></div>
+          </article>
+          <p class="safety-note"><strong>Keep it practical:</strong> Farming conditions differ across the Philippines. Adapt suggestions to your location and consult local agricultural extension staff.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="planting-section" id="planting" aria-labelledby="planting-title">
+      <div class="section-wrap">
+        <div class="section-heading planting-heading">
+          <div><p class="eyebrow eyebrow-light">03 · Grow with the seasons</p><h2 id="planting-title">A planting guide<br>for your patch.</h2></div>
+          <p>Use these general ideas to get started. Planting windows vary by region, elevation, rainfall, and variety—ask your local agriculture office for advice that fits your area.</p>
+        </div>
+        <div class="planting-grid crop-card-grid" id="crop-card-grid" aria-label="Crop information"></div>
+        <div class="planting-tip"><span aria-hidden="true">✳</span><p><strong>Before you plant:</strong> Check local seasonal advisories, seed availability, and advice from your municipal or city agriculture office. Keep a simple record of planting dates and varieties.</p></div>
+      </div>
+    </section>

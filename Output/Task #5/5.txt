@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f1">
+  <meta name="description" content="A practical agriculture and food innovation guide for Filipino farmers, with planting tips, field tasks, and crop care reminders.">
+  <title>Anihan — Agriculture &amp; Food Innovation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Anihan home">
+      <span class="brand-icon" aria-hidden="true">✳</span>
+      <span><strong>anihan</strong><small>AGRICULTURE &amp; FOOD INNOVATION</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#farm-watch">Farm watch</a>
+      <a href="#innovation">Farm innovation</a>
+      <a href="#planting">Planting guide</a>
+      <a href="#farm-tasks">Farm checklist</a>
+      <a href="#reminders">Crop reminders</a>
+    </nav>
+    <a class="header-action" href="#planting"><span aria-hidden="true">✳</span> Plan your season</a>
+  </header>
+
+  <aside class="demo-notice" aria-label="Demo and data privacy notice">
+    <span class="demo-notice-icon" aria-hidden="true">!</span>
+    <p><strong>Demo website:</strong> For demonstration only. Do not enter real, private, or confidential farm data.</p>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Local knowledge. Better harvests. Shared progress.</p>
